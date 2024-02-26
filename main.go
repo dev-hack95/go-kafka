@@ -40,7 +40,8 @@ func main() {
 		}
 
 		for {
-			// Erro point
+			// Error point
+			// My Analysis is, it is unable to create group id
 			event := consumer.Poll(100)
 			fmt.Println(event)
 			switch e := event.(type) {
